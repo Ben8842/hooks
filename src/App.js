@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import React, { useState } from "react";
+import Timed from "./components/Timed.js";
 
 function App() {
   // Declare a new state variable, which we'll call "count"
@@ -9,8 +9,14 @@ function App() {
 
   return (
     <div>
-      <p>You clicked {count} times</p>
+      <p>You have {count} points</p>
       <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={() => setCount(count + 2)}>Click me</button>
+      <button onClick={() => setCount(count + 3)}>Click me</button>
+      <button onClick={() => setCount(count * 2)}>Click me</button>
+      <button onClick={() => setCount(count * 3)}>Click me</button>
+      <button onClick={() => setCount(count * 6)}>Click me</button>
+      <Timed />
     </div>
   );
 }
