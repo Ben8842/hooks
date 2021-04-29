@@ -23,6 +23,7 @@ function App() {
       <button onClick={() => setCount(count * 2)}>Click me</button>
       <button onClick={() => setCount(count * 3)}>Click me</button>
       <button onClick={() => setCount(count * 6)}>Click me</button>
+      <button onClick={() => setCount(count * 2 - 800)}>NEW BUTTON</button>
     </div>
   );
 }
