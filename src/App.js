@@ -30,6 +30,9 @@ function App() {
       <button onClick={() => setCount(count * 2 - 800)}>
         NEW BUTTON AGAIN
       </button>
+      <button onClick={() => setCount(count * 2 - 800)}>
+        NEW BUTTON AGAIN
+      </button>
     </div>
   );
 }
